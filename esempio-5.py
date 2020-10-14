@@ -13,6 +13,6 @@ else:
     if b>c:
         max = b
     else:
-        max= c
+        max = c
 
 print ("tra ", a,",",b, " e ",c," il maggiore è ",max)

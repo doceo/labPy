@@ -13,7 +13,7 @@ elif lingua == "NDL":
     saluto = "Hoi"
 
 elif ((lingua == "GBR") or (lingua == "USA")):
-    saluto = "ciao"
+    saluto = "hello"
 
 else:
     saluto = "?"

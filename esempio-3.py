@@ -2,5 +2,4 @@
 
 nome = input("scrivi il nome.. ")
 
-
 print("ciao",nome )

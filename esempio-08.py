@@ -5,7 +5,7 @@
 settimana = ['LUN', 'MAR', 'MER', 'GIO', 'VEN', 'SAB', 'DOM']
 
 #posso stampare un elmenento in particolare
-print ("primo giorno: ",settimana[1])
+print ("primo giorno: ",settimana[4])
 
 #se voglio stampare tutta la lista posso usare un ciclo di for che ha la seguente sintassi
 #for VARIABILE in LISTA:

@@ -1,9 +1,8 @@
 #strutture iterative
-#somma tra due numeri
+#somma dei primi N numeri
 
 N = int(input("inserisci N: "))
 i=1
-
 somma = 0
 
 while i <= N:

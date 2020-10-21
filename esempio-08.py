@@ -24,9 +24,13 @@ print()
 #attraverso range posso generare numeri che vanno da un min ad un max: range(min,max)
 #range(start, stop, step)    stop non è incluso
 
-print("range(3,10): ")
+print("range(3,9,2): ")
 
-intervallo = range(3,10)
+# [3,4,5,6,7,8,9]
+#range (3,10,2)
+#range(6)
+
+intervallo = range(3,9,2)
 for x in intervallo:
     print(x)
 
@@ -47,6 +51,4 @@ for x in pari_minori_di_30:
     print(x)
 #len() restituisce il numero degli elementi della lista
 print("sono", len(pari_minori_di_30), "elementi")
-
-
 

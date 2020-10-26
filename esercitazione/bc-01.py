@@ -12,7 +12,7 @@ if a!=0 & b!=0 & c!=0:
  
 if b==0:
  print("l'equazione è pura")
- x1=int(-**-c/a)  #cosa hai elevato a potenza?
+ x1=int(-b**2-c/a)  #cosa hai elevato a potenza?
  x2=int(+**-c/a)
 
 if c=0

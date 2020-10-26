@@ -13,9 +13,9 @@ if a!=0 & b!=0 & c!=0:
 if b==0:
  print("l'equazione è pura")
  x1=int(-b**2-c/a)  #cosa hai elevato a potenza?
- x2=int(+**-c/a)
+ x2=int(+b**2-c/a)
 
-if c=0
+if c=0:
  print("l'equazione è spuria")
  x1=int(0)
  x2=int(-b/a)

@@ -25,6 +25,8 @@ def area_del_cerchio (raggio):
     return area
 
 
+
+
 r1 = float(input("Inserisci il raggio del primo cerchio: "))
 r2 = float(input("Inserisci il raggio del secondo cerchio:"))
 differenza =abs(area_del_cerchio(r1)-area_del_cerchio(r2))  #abs() restituisce il valore assoluto

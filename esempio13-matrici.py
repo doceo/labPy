@@ -41,6 +41,6 @@ print (' è stata modificata anche la copia: ',materie_copia, '\n')
 # liste nei cicli
 i = 0
 while i < len(materie):
-    print (materie[i],, ' di lunghezza: ', len(materie[i]))
+    print (materie[i],' di lunghezza: ', len(materie[i]))
     i = i +1
 

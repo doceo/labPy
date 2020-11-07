@@ -35,6 +35,7 @@ materie = ['italiano', 'matematica', 'scienze']
 materie_copia = materie
 
 materie[4:4] = ['latino']
+print ('materie ',materie)
 
 print (' è stata modificata anche la copia: ',materie_copia, '\n')
 

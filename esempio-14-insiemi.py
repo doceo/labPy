@@ -5,6 +5,7 @@ luoghi = {'napoli', 'roma', 'milano', 'roma', 'venezia', 'napoli'}
 
 # se stampiamo eliminerà i doppioni e l'ordine non sarà rispettato
 print (luoghi, '\n')
+print(type(luoghi))
 
 # possiamo realizzare tutte le operazioni tra insiemi
 #   Unione                  A | B

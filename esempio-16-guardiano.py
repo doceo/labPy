@@ -1,3 +1,4 @@
+#non lo abbiamo affrontato in 2E
 
 porte = dict() #definiamo un dizionario
 

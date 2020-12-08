@@ -1,0 +1,36 @@
+
+# infludiamo questo modulo per creare numeri casuali
+from random import randint
+
+# per accedere ad un file devo assegnare
+# ad un oggetto il file da aprire, in lettura o scrittura
+
+# associo ad f il file, indico con "w" il tipo di operazione
+# così lo aprirà in scrittura (write)
+
+f = open("dati.txt", 'w')
+
+# definiamo una variabile stringa da riempire con i dati che poi scriverò
+
+# inizializzo la stringa
+dati = ""
+
+# il primo ciclo serve a creare le singole righe
+for riga in range(1,3):
+
+    # il secondo ciclo serve a compulare la singola riga
+    for elemento in range(1,10):
+
+        # aggiungo il numero casuale e inserisco uno spazio in coda
+        dati = dati + str(randint(1,10)) + " "
+    
+    # aggiungo un terminatore di riga, così il secondo rigo va a capo
+    dati = dati + "\n"
+ 
+print(dati)
+
+# scrivo la stringa nel file
+f.write(dati)
+
+# chdiuamo sempre il file
+f.close()

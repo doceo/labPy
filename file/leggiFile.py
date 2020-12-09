@@ -32,3 +32,9 @@ f.close()  # chiudiamo il file
 
 print ("X: ",coordX)
 print ("Y: ",coordY)
+
+# stampo il tipo di dati delle coordinate
+print(type(coordX))
+print(type(coordY))
+
+# ora sono pronte per essere usate anche nei grafici

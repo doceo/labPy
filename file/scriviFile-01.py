@@ -16,17 +16,24 @@ f = open("dati.txt", 'w')
 dati = ""
 
 # il primo ciclo serve a creare le singole righe
-for riga in range(1,3):
+for riga in range(10):
 
     # il secondo ciclo serve a compulare la singola riga
-    for elemento in range(1,10):
+    for elemento in range(1):
 
         # aggiungo il numero casuale e inserisco uno spazio in coda
-        dati = dati + str(randint(1,10)) + " "
+        dati = dati + str(randint(1,100)) + "," + str(randint(1,100))
     
     # aggiungo un terminatore di riga, così il secondo rigo va a capo
     dati = dati + "\n"
- 
+
+# avremmmo potuto creare una lista di righe:
+# lines = [
+#...     'prima riga del file\n',
+#...     'seconda riga del file\n',
+#...     'terza riga del file\n',
+#... ]
+
 print(dati)
 
 # scrivo la stringa nel file

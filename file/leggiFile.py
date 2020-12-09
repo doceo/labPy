@@ -1,5 +1,7 @@
 
 import string
+import numpy as np
+import matplotlib.pyplot as plt
 
 # apriamo il file in lettura
 f = open("dati.txt", 'r')
@@ -33,8 +35,20 @@ f.close()  # chiudiamo il file
 print ("X: ",coordX)
 print ("Y: ",coordY)
 
+# ordiniamo le liste
+coordX.sort()
+coordY.sort()
+
+print("liste ordinate:") 
+print ("X: ",coordX)
+print ("Y: ",coordY)
+
 # stampo il tipo di dati delle coordinate
 print(type(coordX))
 print(type(coordY))
 
 # ora sono pronte per essere usate anche nei grafici
+
+plt.plot(coordX,coordY)
+plt.ylabel('some numbers')
+plt.show()

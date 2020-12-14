@@ -1,3 +1,6 @@
+# Luca Patruno - IIE 2020/2021
+
+
 from os import system, path
 from sys import platform, executable
 #Importo le librerie

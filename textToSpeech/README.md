@@ -10,6 +10,7 @@ lo si può eseguire con qualunque programma.
 Entrambi i muduli si installano con pip.
 
 pip install gTTS
+
 pip install playsound
 
 ## NOTA ##

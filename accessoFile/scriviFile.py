@@ -8,7 +8,7 @@ from random import randint
 # associo ad f il file, indico con "w" il tipo di operazione
 # così lo aprirà in scrittura (write)
 
-f = open("dati.txt", 'w')
+f = open("dati4.txt", 'w')
 
 # definiamo una variabile stringa da riempire con i dati che poi scriverò
 
@@ -16,7 +16,7 @@ f = open("dati.txt", 'w')
 dati = ""
 
 # il primo ciclo serve a creare le singole righe
-for riga in range(10):
+for riga in range(100):
 
     # il secondo ciclo serve a compulare la singola riga
     for elemento in range(1):

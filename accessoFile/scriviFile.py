@@ -16,7 +16,7 @@ f = open("dati4.txt", 'w')
 dati = ""
 
 # il primo ciclo serve a creare le singole righe
-for riga in range(100):
+for riga in range(10):
 
     # il secondo ciclo serve a compulare la singola riga
     for elemento in range(1):

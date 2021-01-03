@@ -5,7 +5,7 @@ import numpy as np
 
 fig, ax = plt.subplots(1, 4, figsize=(14,3))
 
-# generiamo una matrice di una riga per 4 colonne
+# generiamo una matrice di una riga per 4 colonne da inserire in Figure
 left, bottom, width, height = 0.1, 0.1, 0.8, 0.8  
  
 x = np.linspace(-5,5,100)

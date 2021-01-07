@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # apriamo il file in lettura
-f = open("dati.txt", 'r')
+f = open("dati4.txt", 'r')
 
 # usiamo il metodo readlines 
 # per ottenere una lista di righe del file

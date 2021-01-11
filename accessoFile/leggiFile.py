@@ -6,14 +6,22 @@ import matplotlib.pyplot as plt
 # apriamo il file in lettura
 f = open("dati.txt", 'r')
 
-# usiamo il metodo readlines 
-# per ottenere una lista di righe del file
+'''
+si potrebbe usare il metodo readlines 
+per ottenere una lista di righe del file
 
-# stampiamo la prima riga
-# print(f.readline()) 
+stampiamo la prima riga
+print(f.readline()) 
 
-# possiamo fare un ciclo e prendere riga per riga 
+possiamo fare un ciclo e prendere riga per riga 
+Python, tuttavia, mette a disposizione la possibilità
+di inserire riga per riga all'interno di una varabile, 
+utilizzando un ciclo di for
 
+valori = str(riga)
+
+permette di salvare in "valori" il contenuto della riga estratta
+'''
 coordX = []
 coordY = []
 
@@ -21,7 +29,7 @@ coordY = []
 # direttamente sulle righe
 
 for riga in f:
-    valori = str(f.readline())  # converto in stringa la riga
+    valori = str(riga)  # converto in stringa la riga
     Nval = len(valori)          # conto il numero di caratteri
     valori = valori.strip('\n') # elimino i lterminatore di riga
     valori = valori.split(',')  # separo la stringa in due numeri

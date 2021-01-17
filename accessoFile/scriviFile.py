@@ -1,5 +1,5 @@
 
-# infludiamo questo modulo per creare numeri casuali
+# includiamo questo modulo per creare numeri casuali
 from random import randint
 
 # per accedere ad un file devo assegnare
@@ -27,7 +27,7 @@ for riga in range(10):
     # aggiungo un terminatore di riga, così il secondo rigo va a capo
     dati = dati + "\n"
 
-# avremmmo potuto creare una lista di righe:
+# avremmo potuto creare una lista di righe:
 # lines = [
 #...     'prima riga del file\n',
 #...     'seconda riga del file\n',

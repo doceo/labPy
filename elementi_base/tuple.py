@@ -1,23 +1,28 @@
-#introduzione alle tuple
-#Una tupla è una sequenza ordinata e immutabile di valori non necessariamente
-#dello stesso tipo e si racchiudono tra parentesi tonde
+'''
+Una tupla è una sequenza ordinata e immutabile di valori non necessariamente
+dello stesso tipo e si racchiudono tra parentesi tonde
+'''
 
 tupla = (7, 4, 16, 34)
 parole = ( 'foglia', 'casa', 'pompieri', 'albero' )
+numero = 100
+tupla_mista = (numero, 'foglia', 'casa', 'pompieri', 'albero' )
 
 print ('tupla: ', tupla, '\n') #\n aggiunge una riga sotto alla parola mandata in output
 
 print ('parole: ',parole, '\n')
+
+print ('tupla_mista: ',tupla_mista, '\n')
 
 #un elemento di una tupla può essere a sua volta una tupla
 elementi = (1, 'ancoraparole', 4,'enumeri', ('tuple', 'di', 'tuple' ))
 
 print ('elementi: ', elementi, '\n')
 
-#posso concatenare le tuple
+#è possibile concatenare le tuple
 print('concateno due tuple: ',tupla + parole, '\n')
 
-#accedo agli elementi di una tupla tramite le parentesi quadre []
+#è possibile accedere agli elementi di una tupla tramite le parentesi quadre []
 print('parole[0]:',parole[0], '\n')
 
 #il tipo di rsultato dipende dal tipo di dato inserito nella tupla.
@@ -31,7 +36,6 @@ print (type(elementi[0]), '\n')
 print('la lunghezza della tupla PAROLE è:', len(parole), '\n')
 
 #è possibile estrarre solo una sotosezione della tupla con NOME[inizio:fine]
-
 print ('elementi[1:4]:',elementi[1:4],'\n')
 
 #è possibile verificare l'appartenenza di una tupla:

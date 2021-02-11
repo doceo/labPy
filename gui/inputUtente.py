@@ -9,13 +9,13 @@ def Moltiplica(a, b):
 
 app = App(title="Moltiplica",bg="#f5f5f5")
 
-output = TextBox(app, width=80, height=10, multiline=True)
+output = TextBox(app, width=80, height=10, multiline=False)
 
 etichettaA = Text(app, text="Inserisci A:")
-paramB = TextBox(app)
+paramA = TextBox(app)
 etichettaB = Text(app, text="Inserisci B:")
 paramB = TextBox(app)
 
-pushB = PushButton(app, text="Moltiplica!", command=Moltiplica, args=[paramB, paramB])
+pushB = PushButton(app, text="Moltiplica!", command=Moltiplica, args=[paramA, paramB])
 app.display()
 

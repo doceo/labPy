@@ -32,6 +32,9 @@ print()
 
 virgolette = "cambio la stringa" #posso farlo
 
+print(virgolette)
+print()
+
 numeroCarattere = '4'
 
 numeroIntero = int(numeroCarattere)
@@ -39,9 +42,8 @@ numeroIntero = int(numeroCarattere)
 numeroIntero += 1
 
 print("il numero incrementato è ", numeroIntero)
-
-print(virgolette)
 print()
+
 # lunghezza di una stringa
 n = len(virgolette)
 print ("virgolette contiene", n, "caratteri")
@@ -93,3 +95,16 @@ while i < len(frase):
 print("ciclo for")
 for lettera in frase:
     print(lettera, " ", ord(lettera))
+
+# dividere una stringa
+
+fraseSpezzata = frase.split(" ")
+
+# si otterrà una lista con i due pezzi della stringa
+print(fraseSpezzata)
+
+# è possibile elimanre una sottostringa
+fraseStrippata = frase.lstrip('pa')
+
+# si ottiene
+print(fraseStrippata)

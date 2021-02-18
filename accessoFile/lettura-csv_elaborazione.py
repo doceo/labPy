@@ -25,7 +25,7 @@ for popol in popolazione:
     popol[3] = popol[3].replace(".","") # elimino i punti 
     popol[3] = popol[3].replace(",",".")# covnerto la virgola in punto
 
-    popolazioneTot += float(popol[3]) # converto in numero reale
+    popolazioneTot = popolazioneTot + float(popol[3]) # converto in numero reale
 
 
 print("la popolazione totale è: ",popolazioneTot)

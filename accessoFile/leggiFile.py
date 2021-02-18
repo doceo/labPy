@@ -31,7 +31,7 @@ coordY = []
 for riga in f:
     valori = str(riga)  # converto in stringa la riga
     Nval = len(valori)          # conto il numero di caratteri
-    valori = valori.strip('\n') # elimino i lterminatore di riga
+    valori = valori.strip('\n') # elimino il terminatore di riga
     valori = valori.split(',')  # separo la stringa in due numeri
     valori = list(valori)       # converto in lista
     print(valori)

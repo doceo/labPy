@@ -1,6 +1,10 @@
 '''
 Salvare su file una struttura dati complessa
 e successivamente ricaricarla dal file
+
+dettagli sul modulo JSON sono reperibili alla pagina descrittiva
+https://docs.python.org/3/library/json.html
+
 '''
 import json
 
@@ -14,8 +18,13 @@ dati = {
 
 }
 
-# salvo su file
+''' 
+salvare su file su file
+parametri di input per dump:
+json.dump(obj, fp, *, skipkeys=False, ensure_ascii=True, check_circular=True, 
+allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=False, **kw)
 
+'''
 with open("data.json", "w") as f:
     json.dump(dati, f)
 

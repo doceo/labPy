@@ -19,17 +19,15 @@ print ("valuta: ",valuta,'\n' )
 prof = professori["matematica"]
 print ("accedo all'oggetto relativo alla chiave matematica: ",prof,'\n')
 
-# per aggiungere un elemento devo far riferimento ad una nuova chiave
+# per aggiungere un elemento bisogna far riferimento ad una nuova chiave
 
 professori["ed. fisica"]= "crisafo"
 
 print ("professori aggiornato: ", professori,'\n')
 
-# anche nei dizionari possiamo usare la funzione len
+# anche nei dizionari è possibile usare la funzione len
 
-print ('il numero di elemnti è len(professori): ',len(professori),'\n')
-
-# anche la verifica dell'esistena nel dizionario si può effettuale come per le altre strutture
+print ('il numero di elementi è len(professori): ',len(professori),'\n')
 
 # cancellazione di un elemento
 
@@ -37,8 +35,14 @@ del professori['ed. fisica']
 
 print ("professori aggiornato: ", professori,'\n')
 
-# come per le liste, assgnare ad una nuova variabile un dizionario esistente si ottiene
-# un riferimento e non una copia del dizionario esistente
+# riferimento ad un dizionario, non si può effettuare la copia
+
+professori2 = professori
+
+professori2['ed. fisica'] = "nuovo prof"
+
+#stampando professori si visualizza la modifica avvenuta in professori2 
+print("riferimento aggiornato", professori, "\n")
 
 # matrici
 

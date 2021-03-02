@@ -1,43 +1,49 @@
-# in questo file ci sono alcune funnzioni base
-# sulle stringhe
-
-# UNA STRINGA È UNA SEQUENZA ORDINATA DI CARATTERI
-
-
-# concatenazione
-
+'''
+OPERAZIONI SULLE STRINGHE
+'''
 nome = "paolo"
 spazio = ' '
 cognome = 'esposito'
 
+# concatenazione
 frase = nome + spazio + cognome
 
 print(frase)
 print()
 # possiamo usare apici '' o virgolette ""
 
-# se abbiamo bisogno di usare apici, rachciudiamo
+# se abbiamo bisogno di usare apici, includiamo
 # la stringa tra virgolette e viceversa.
 
 apice = "usiamo l'apostrofo"
 virgolette = 'o "virgolettare" un testo'
 
-print (apice)
-print (virgolette)
+print(apice)
+print(virgolette)
 print()
 # accesso agli elementi di una stringa
 
 print('la quarta lettera di virgolette è: ',virgolette[4] )
 print()
 # una stringa è immutabile, non possiamo cambiare
-# un singolo carattere la l'intera stringa si
+# un singolo carattere, ma l'intera stringa si
 
-# virgolette[4] = r restituirebbe errore
+# virgolette[4] = 'c' -> restituirebbe errore
 
 virgolette = "cambio la stringa" #posso farlo
 
 print(virgolette)
 print()
+
+numeroCarattere = '4'
+
+numeroIntero = int(numeroCarattere)
+
+numeroIntero += 1
+
+print("il numero incrementato è ", numeroIntero)
+print()
+
 # lunghezza di una stringa
 n = len(virgolette)
 print ("virgolette contiene", n, "caratteri")
@@ -46,7 +52,7 @@ print()
 # Sezioni di stringa, posso estrarre una parte della stringa
 print("estrapoliamo porzioni dalla variabile 'virgolette'")
 s = virgolette[3:6]
-print (s)
+print(s)
 print(virgolette[5:8])
 
 print('primi 4 caratteri: ',virgolette[:4])
@@ -89,3 +95,16 @@ while i < len(frase):
 print("ciclo for")
 for lettera in frase:
     print(lettera, " ", ord(lettera))
+
+# dividere una stringa
+
+fraseSpezzata = frase.split(" ")
+
+# si otterrà una lista con i due pezzi della stringa
+print(fraseSpezzata)
+
+# è possibile elimanre una sottostringa
+fraseStrippata = frase.lstrip('pa')
+
+# si ottiene
+print(fraseStrippata)

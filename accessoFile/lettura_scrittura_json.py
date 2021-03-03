@@ -26,7 +26,7 @@ allow_nan=True, cls=None, indent=None, separators=None, default=None, sort_keys=
 
 '''
 with open("data.json", "w") as f:
-    json.dump(dati, f)
+    json.dump(dati, f, indent=4)
 
 f.close()
 
@@ -41,3 +41,4 @@ print("stampa il file intero: ",dati_da_file)
 
 # oppure un singolo elemento
 print("stampa il valore associato alla chiave tre':",dati_da_file["tre"])
+

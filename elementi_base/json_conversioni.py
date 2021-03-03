@@ -51,3 +51,8 @@ z = json.dumps(x)
 
 # risultato:
 print("convertiamo una lista", z)
+
+dic = json.loads(z)
+
+print("z: ",type(z))
+print("dic: ",type(dic))

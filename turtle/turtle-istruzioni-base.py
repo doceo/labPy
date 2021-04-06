@@ -57,4 +57,4 @@ tarty.hideturtle() # nasconde la tartaruga
 tarty.forward(100)
 tarty.showturtle()
 
-aspetta = input("clicca un tasto")
+aspetta = input("clicca invio")

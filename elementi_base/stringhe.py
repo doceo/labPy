@@ -98,7 +98,11 @@ for lettera in frase:
 
 # dividere una stringa
 
-fraseSpezzata = frase.split(" ")
+fraseSpezzata = frase.split("o")
+
+print(frase.count("o"))
+
+print(len(frase))
 
 # si otterrà una lista con i due pezzi della stringa
 print(fraseSpezzata)

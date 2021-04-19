@@ -4,6 +4,10 @@ CHANGELOG
 Python, appunti di scuola
 - - - - - - - - - - - - -
 
+### ver. 0.43
+* aggiornamento minore sulle stringhe
+* funzioni
+* aggiornamenti minori del modulo Time
 
 ### ver. 0.42
 
@@ -11,5 +15,7 @@ Python, appunti di scuola
 * installazione
 * funzione print
 * acquisizione di input dall'utente
-* gestione degli errori di input
+* gestione degli errori; try-except
 
+
+* Bibliografia

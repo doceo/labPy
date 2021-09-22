@@ -2,7 +2,7 @@
 RANGE
 '''
 
-# UN PARAMETRO: sottinde iniziare da 0
+# UN PARAMETRO: sottintende iniziare da 0
 sequenza = range(10)
 print("\n\n prima sequenza: ")
 for i in sequenza:

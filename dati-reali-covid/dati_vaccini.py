@@ -24,57 +24,65 @@ def residenti():
 
     popolSeries.plot(ax = axes, kind = 'bar', title="Popolazione residente")
 
-    plt.show()
+#    plt.show()
 
     return(popolSeries)
 
+'''
+normalizza prende in inputo:
+ - dato INT
+ - regione STRING
+ - res PD.SERIES
 
+'''
+
+def normalizza(dato, regione, res):
+
+    dato = dato/res[regione]*100000
+
+    return dato
+    
 '''
 estrapola riceve 2 valori in input:
 - datoUno è la prima colonna da estrapolare
 - datoDue è la seconda colonna da estrapolare
 '''
 
-
-def estrapola(datoUno, datoDue):
+def estrapola(datoUno, datoDue, res):
 
     #print(residenti)
     estrazione = pd.read_csv('somministrazioni-vaccini-latest.csv', sep = ',', header = 0, usecols=['data_somministrazione', datoUno, datoDue])
 
-    #print(estrazione.head())
+    print(res["Campania"])
 
-    res = residenti()
-  
     regioni = []
 
 #    print(res)
 
-    for re in res:
-        valori = pd.DataFrame(estrazione.loc[estrazione[datoDue]==re])
-        print(re)
-        #regioni.append()
+    datiNorm = []
 
+    for re in res.index:
+        dfRegioni = estrazione.loc[estrazione[datoUno]==re]
+        print(res[re])
+        norm = dfRegioni[datoDue].apply(lambda x: x/res[re]*100000)
+        print(norm)
 
+        #valori.apply(lambda x : x/res[re]*100000)
+        #print(valori)
 
+        #regioni.append(valori)
 
-'''
-RIFERIMENTI
-iterare un DF
-http://www.antoiovi.com/python/python-pandas/pandas-dataframe/casi-d-uso-ed-esempi/python-pandas-dataframe-operazioni-frequenti#TOC-Iterare-un-dataframe-per-righe-:
+    print(len(regioni))
 
-https://qastack.it/programming/17071871/how-to-select-rows-from-a-dataframe-based-on-column-values
-
-'''
+  
 
 
 '''
 INIZIO DEL MAIN
 '''
+res = residenti()
 
-
-re = residenti()
-
-#estrapola("nome_area","prima_dose")
+estrapola("nome_area","prima_dose",res)
 
 
 #grafici(ospedalizzazioni, 10, 2)

@@ -4,8 +4,11 @@ CHANGELOG
 Python, appunti di scuola
 - - - - - - - - - - - - -
 
+### ver. 0.45
+* classi ed oggetti, specifiche
+
 ### ver. 0.44
-* Classi ed oggetti
+* classi ed oggetti
 
 
 ### ver. 0.43

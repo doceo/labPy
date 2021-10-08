@@ -8,6 +8,13 @@ class retta:
         self.__b = b
         self.__c = c
         self.__punti = []
+    
+    def __init__(self, p1, p2):
+        '''
+        questo costruttore deve generare una retta a partire da due punti.
+        p1 e p2 sono tuple che identificano le coordinate dei punti a partire
+        dai quali vanno ricavati a,b e c ed inizializzati gli attributi di istanza
+        '''
 
     def getA(self):
         return self.__a
@@ -55,3 +62,4 @@ class retta:
         in parallelo oppure la lista __punti() se le rette dovessero coincidere. 
         '''
         return 0
+

@@ -14,7 +14,6 @@ class retta:
 
     def getB(self):
         return self.__b
-
     
     def getC(self):
         return self.__c
@@ -37,7 +36,6 @@ class retta:
         '''
         return 0
 
-
     def punti(self, N, M):
         '''
         definire il metodo che a partire da N ed M genera tutte le coppie (tuple) di x e y 
@@ -47,5 +45,13 @@ class retta:
     def m(self):
         '''
         restituire il coefficiente angolare a valle delle dovute verifiche
+        '''
+        return 0
+
+    def intersezione(self, s):
+        '''
+        acquisita una retta s in input, questo metodo deve restituire il punto in comune 
+        (sottoforma di tupla), verificandone l'esistenza. Restituire "null" se le rette sono 
+        in parallelo oppure la lista __punti() se le rette dovessero coincidere. 
         '''
         return 0

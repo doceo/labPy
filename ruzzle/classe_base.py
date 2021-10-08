@@ -1,6 +1,6 @@
 # classe calcolo combinatorio
 
-class combinazioni():
+class calcComb():
 
     def __init__(self, stringa):
 
@@ -22,45 +22,97 @@ class combinazioni():
         
         return 0
 
-    def permutPos(self,k):
-
-        return self.__N**k
-
-    def combUtil(self):
+    def confUtil(self):
         '''
         verificare se la STRINGA attributo di istanza è presente
         nel file word.italian.txt 
         '''
         return 0
 
-    def nPermutSenzaRip(self,k):
+    # CONFIGURAZIONI
+
+    def confPos(self,k):
+        # restituisce i numero di configurazioni possibili 
+        # con k posizioni
+        return self.__N**k
+
+    # PERMUTAZIONI
+
+    def nPermutSenzaRip(self):
         '''
-        in funzione di k generare il numero di permutazioni SENZA ripetizione
-        su k posizioni
+        restituire il numero di permutazioni SENZA ripetizione
         '''
         return 0
 
-    def nPermutConRip(self,k):
+    def nPermutConRip(self):
         '''
-        in funzione di k generare il numero di permutazioni CON ripetizione
-        su k posizioni
-        '''
-        return 0
-
-    def nermutSenzaRip(self,k):
-        '''
-        in funzione di k generare la lista di permutazioni CON ripetizione
-        su k posizioni
+        restituire il numero di permutazioni CON ripetizione
         '''
         return 0
 
-
-    def permutConRip(self,k):
+    def permutSenzaRip(self):
         '''
-        in funzione di k generare la lista di permutazioni CON ripetizione
-        su k posizioni
+        generare e restituire la lista di permutazioni SENZA ripetizione
+        '''
+        return 0
+
+    def permutConRip(self):
+        '''
+        generare e restituire la lista di permutazioni CON ripetizione
+        '''
+        return 0
+
+    # DISPOSIZIONI
+
+    def nDispSemplSenzaRip(self):
+        '''
+        restituire il numero di disposizioni semplici SENZA ripetizione
+        '''
+        return 0
+
+    def nDispSemplConRip(self):
+        '''
+        restituire il numero di disposizioni semplici CON ripetizione
+        '''
+        return 0
+
+    def dispSemplSenzaRip(self):
+        '''
+        generare e restituire la lista delle disposizioni semplici SENZA ripetizione
         '''
         return 0
 
 
+    def dispSemplConRip(self):
+        '''
+        generare e restituire la lista delle disposizioni semplici CON ripetizione
+        '''
+        return 0
+
+    # COMBINAZIONI
+
+    def nCombSemplSenzaRip(self):
+        '''
+        restituire il numero delle combinazioni SENZA ripetizione
+        '''
+        return 0
+
+    def nCombSemplConRip(self):
+        '''
+        restituire il numero delle combinazioni CON ripetizione
+        '''
+        return 0
+
+    def combSenzaRip(self):
+        '''
+        generare e restituire la lista delle combinazioni SENZA ripetizione
+        '''
+        return 0
+
+
+    def combConRip(self):
+        '''
+        generare e restituire la lista delle combinazioni CON ripetizione
+        '''
+        return 0
 

@@ -44,3 +44,8 @@ class retta:
         appartengono alla retta nell'intervallo N e M dell'asse X.
         '''
 
+    def m(self):
+        '''
+        restituire il coefficiente angolare a valle delle dovute verifiche
+        '''
+        return 0

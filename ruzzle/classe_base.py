@@ -29,12 +29,6 @@ class calcComb():
         '''
         return 0
 
-    # CONFIGURAZIONI
-
-    def confPos(self,k):
-        # restituisce i numero di configurazioni possibili 
-        # con k posizioni
-        return self.__N**k
 
     # PERMUTAZIONI
 

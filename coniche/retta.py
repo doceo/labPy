@@ -7,37 +7,40 @@ class retta:
         self.__a = a  
         self.__b = b
         self.__c = c
+        self.__punti = []
 
-    def equazione(self):
-        if(self.__b>0 and self.__c>0):
-            return f'{self.__a}x + {self.__b}y + {self.__c} = 0'
-        elif(self.__b<0 and self.__c>0):
-            return f'{self.__a}x {self.__b}y + {self.__c} = 0'
-        elif(self.__b>0 and self.__c<0):
-            return f'{self.__a}x + {self.__b}y {self.__c} = 0'
-        else:
-            return f'{self.__a}x {self.__b}y {self.__c} = 0'
+    def getA(self):
+        return self.__a
 
+    def getB(self):
+        return self.__b
+
+    
+    def getC(self):
+        return self.__c
+
+    def eqEsplicita(self):
+        '''
+        restituire in output la forma implicita della retta
+        '''
+        return 0
+
+    def eqImplicita(self):
+        '''
+        restituire in output la forma implicita della retta
+        '''
+        return 0
 
     def trovaY(self, x):
-        if self.__b!=0:
-            return self.__c/self.__b*x 
-
-    def coppie(self):
-        punti = []
-
-        for i in range(1000):
-            punti.append((i,self.trovaY(i)))
-        return punti
+        '''
+        restituire in output la forma esplciita della retta
+        '''
+        return 0
 
 
-# inizio del programma chiamante
+    def punti(self, N, M):
+        '''
+        definire il metodo che a partire da N ed M genera tutte le coppie (tuple) di x e y 
+        appartengono alla retta nell'intervallo N e M dell'asse X.
+        '''
 
-
-r = retta(-3,-4,-6)
-
-print(r.equazione())
-print(r.coppie())
-
-# il metodo dir permette di conoscere tutti i metodi applicabili all'oggetto passato come parametro
-print(dir(r))

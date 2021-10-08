@@ -15,11 +15,14 @@ class combinazioni():
         return self.__listStringa
 
     def setStringa(self):
-        #modificare questo metodo in modo da verificare la coerenza delle variabili di
-        #istanza presenti
+        '''
+        modificare questo metodo in modo da verificare la coerenza delle variabili di
+        istanza presenti
+        '''
+        
         return 0
 
-    def combPos(self,k):
+    def permutPos(self,k):
 
         return self.__N**k
 
@@ -29,5 +32,35 @@ class combinazioni():
         nel file word.italian.txt 
         '''
         return 0
+
+    def nPermutSenzaRip(self,k):
+        '''
+        in funzione di k generare il numero di permutazioni SENZA ripetizione
+        su k posizioni
+        '''
+        return 0
+
+    def nPermutConRip(self,k):
+        '''
+        in funzione di k generare il numero di permutazioni CON ripetizione
+        su k posizioni
+        '''
+        return 0
+
+    def nermutSenzaRip(self,k):
+        '''
+        in funzione di k generare la lista di permutazioni CON ripetizione
+        su k posizioni
+        '''
+        return 0
+
+
+    def permutConRip(self,k):
+        '''
+        in funzione di k generare la lista di permutazioni CON ripetizione
+        su k posizioni
+        '''
+        return 0
+
 
 

@@ -4,6 +4,14 @@ CHANGELOG
 Python, appunti di scuola
 - - - - - - - - - - - - -
 
+### ver. 0.46
+* Programmazione ad oggetti
+* Attributi e metodi
+* Incapsulamento e information hiding
+* Ereditarietà
+* Polimorfismo
+
+
 ### ver. 0.45
 * classi ed oggetti, specifiche
 

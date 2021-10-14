@@ -30,24 +30,26 @@ class auto:
 
 # inizia il programma chiamante
 
-giovanni = auto("giovanni","ford","fiesta",1500, 160, "rosso")
+if __name__ == "__main__":
 
-marco = auto("marco","fiat","Bravo",2500, 200, "verde")
-pippo = auto("marco","fiat","Bravo",2500, 200, "verde")
+    giovanni = auto("giovanni","ford","fiesta",1500, 160, "rosso")
+
+    marco = auto("marco","fiat","Bravo",2500, 200, "verde")
+    pippo = auto("marco","fiat","Bravo",2500, 200, "verde")
 
 
-print("Il tipo di variabile costruita è:")
-print(giovanni)
-print(marco)
+    print("Il tipo di variabile costruita è:")
+    print(giovanni)
+    print(marco)
 
-print("\nLa singola scheda è:")
-print (giovanni.scheda())
-print (marco.scheda())
-print("\nauto totali: ",auto.parcoAuto)
+    print("\nLa singola scheda è:")
+    print (giovanni.scheda())
+    print (marco.scheda())
+    print("\nauto totali: ",auto.parcoAuto)
 
-print("\n\naltro metodo per visualizzare le informazioni (__dict__):")
+    print("\n\naltro metodo per visualizzare le informazioni (__dict__):")
 
-print(giovanni.__dict__)
-print(marco.__str__)
+    print(giovanni.__dict__)
+    print(marco.__str__)
 
-print(dir(giovanni))
+    print(dir(giovanni))

@@ -19,8 +19,13 @@ class calcComb():
         modificare questo metodo in modo da verificare la coerenza delle variabili di
         istanza presenti
         '''
-        
         return 0
+
+    def charRipetuti(self):
+        '''
+        questo metodo deve creare un dictionary all'interno del quale la chiave deve essere
+        il singolo carattere, il valore deve essere il numero di ripetizioni di quel carattere
+        '''
 
     def confUtil(self):
         '''

@@ -1,14 +1,23 @@
 # La classe retta
 
 class retta:
-    def __init__(self,a,b,c):
+    def __init__(self, tipo = "param", p1 = None, p2 = None, p3 = None, p4 = None):
+        if(tipo=="param"):
+            # un attributo privato si dichiara con il doppio underscore ( __ )    
+            self.__a = p1  
+            self.__b = p2
+            self.__c = p3
+            self.__punti = []
+            self.__m = m()
 
-    # un attributo privato si dichiara con il doppio underscore ( __ )    
-        self.__a = a  
-        self.__b = b
-        self.__c = c
-        self.__punti = []
-    
+        elif(tipo == "punti"):
+            # inserire la procedura per ricavare a, b, c a partire da due punti.
+            pass
+               
+        elif(tipo == "coeff"):
+            # inserire la procedura per ricavare a, b, e c a partire dal coefficiente angolare ed un punto. 
+            pass
+        
     def __init__(self, p1, p2):
         '''
         questo costruttore deve generare una retta a partire da due punti.

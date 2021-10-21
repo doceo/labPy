@@ -3,6 +3,9 @@ CHANGELOG
 
 Python, appunti di scuola
 - - - - - - - - - - - - -
+### ver. 0.461
+* Piccoli errori in programmazione ad oggetti
+* Riorganizzazione dei capitoli
 
 ### ver. 0.46
 * Programmazione ad oggetti
@@ -11,13 +14,11 @@ Python, appunti di scuola
 * Ereditarietà
 * Polimorfismo
 
-
 ### ver. 0.45
 * classi ed oggetti, specifiche
 
 ### ver. 0.44
 * classi ed oggetti
-
 
 ### ver. 0.43
 * aggiornamento minore sulle stringhe
@@ -25,13 +26,11 @@ Python, appunti di scuola
 * aggiornamenti minori del modulo Time
 * modulo OS
 
-
 ### ver. 0.42
 * integrazione dell'introduzione al linguaggio
 * installazione
 * funzione print
 * acquisizione di input dall'utente
 * gestione degli errori; try-except
-
 
 * Bibliografia

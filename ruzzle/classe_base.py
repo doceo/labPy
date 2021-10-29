@@ -25,6 +25,8 @@ class calcComb():
         '''
         questo metodo deve creare un dictionary all'interno del quale la chiave deve essere
         il singolo carattere, il valore deve essere il numero di ripetizioni di quel carattere
+        
+        esempi di dictionary sono presenti nel file elementi_base/dictionary.py
         '''
 
     def confUtil(self):
@@ -32,8 +34,18 @@ class calcComb():
         verificare se la STRINGA attributo di istanza è presente
         nel file word.italian.txt 
         '''
-        return 0
+        pass
 
+    def fattoriale(n):
+        '''
+        implementare una qualunque versione della funzione fattoriale
+        '''
+
+    def coeffBinom(n, k):
+        ''' 
+        implementare la formula del coefficiente binomiale a partire dal fattoriale
+        '''
+        pass
 
     # PERMUTAZIONI
 

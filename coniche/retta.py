@@ -17,14 +17,7 @@ class retta:
         elif(tipo == "coeff"):
             # inserire la procedura per ricavare a, b, e c a partire dal coefficiente angolare ed un punto. 
             pass
-        
-    def __init__(self, p1, p2):
-        '''
-        questo costruttore deve generare una retta a partire da due punti.
-        p1 e p2 sono tuple che identificano le coordinate dei punti a partire
-        dai quali vanno ricavati a,b e c ed inizializzati gli attributi di istanza
-        '''
-
+ 
     def getA(self):
         return self.__a
 

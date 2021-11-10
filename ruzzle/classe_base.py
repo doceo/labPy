@@ -127,3 +127,7 @@ class calcComb():
         '''
         return 0
 
+    # PROBABILITA'
+
+    def probConfUtil(self):
+        pass

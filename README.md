@@ -7,3 +7,5 @@ Il repository è l'insieme delle attività legate allo studio di Python durante 
 - il file python-appunti.pdf è la documentazione che tiene insieme tutti gli argomenti trattati a lezione. Ha lo scopo di essere un manuale, non la seguenza degli argomenti tattati a lezione.
 
 - ogni cartella contiene script utilizzati prevalentemente in classe, alcuni dei quali presenti anche nella documentazione in pdf.
+
+# questo è un commento per GitHub

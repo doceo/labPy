@@ -11,6 +11,8 @@ carattere = {}
 
 nCaratteri = 0
 count = 0
+carattereRip = {} #conterrà solo i caratteri che si ripetono
+
 
 for i in word:
 
@@ -19,10 +21,14 @@ for i in word:
     else:
         carattere[str(i)] = 1 # se non lo trova lo aggiunge
 
-for i in carattere:
-    if carattere[i]>1: # se trova una lettera ripetuta
-        count+=1 # incrementa il numero di caratteri che si ripetono
-        nCaratteri += carattere[i] # incrementa il numero totale di ripetizioni
 
-print(count)
-print(nCaratteri)
+for i in carattere:
+    print(i)
+    if carattere[i] >= 2:  # se trova il carattere nel dictionari incrementa il suo valore
+        carattereRip[i] = carattere[i] # aggiunge il carattere al dictionary il carattere ripetuto
+
+
+
+print(carattereRip)
+print(carattere)
+#print(nCaratteri)

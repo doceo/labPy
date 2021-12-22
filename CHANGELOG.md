@@ -3,6 +3,11 @@ CHANGELOG
 
 Python, appunti di scuola
 - - - - - - - - - - - - -
+
+### ver. 0.47
+* itertools
+* aggiornata la bibliografia
+
 ### ver. 0.461
 * Piccoli errori in programmazione ad oggetti
 * Riorganizzazione dei capitoli

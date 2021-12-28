@@ -13,7 +13,6 @@ def draw():
     alien.draw()
     screen.draw.text(msg,topleft=(WIDTH/2-30,10), color="white" , fontsize=32)
 
-
 def place_alien():
     alien.x = randint(10,WIDTH-10)
     alien.y = randint(10,HEIGHT-10)

@@ -1,5 +1,15 @@
 CHANGELOG
 =========
+PygameZero, appunti di scuola
+- - - - - - - - - - - - - - -
+
+### ver 0.1
+* prendi l'alieno
+* mangia le mele
+
+
+
+
 
 Python, appunti di scuola
 - - - - - - - - - - - - -

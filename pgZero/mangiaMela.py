@@ -10,10 +10,9 @@ HEIGHT = 800
 msg = ""
 
 def draw():
-#    coin.pos=(100,100)
-#    coin.draw()
+
     screen.clear()
-#    screen.fill("white")
+
     alien.draw()
 
 def place_alien():
@@ -34,4 +33,3 @@ def on_mouse_down(pos):
         quit()
 
 place_alien()
-#place_coin()

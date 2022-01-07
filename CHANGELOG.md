@@ -7,7 +7,8 @@ PygameZero, appunti di scuola
 * prendi l'alieno
 * mangia le mele
 
-
+### ver 0.2
+* Unisci le stelle
 
 
 

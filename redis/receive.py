@@ -1,8 +1,12 @@
+from config import *
+
 from time import sleep
 import redis
 
+
 # connect with redis server as Bob
-r = redis.Redis(host='localhost', port=6379, db=0)
+r = redis.Redis(host='10.255.237.221', port=6379, password='1357642rVi0', db=0)
+
 mario = r.pubsub()
 
 # subscribe to classical music

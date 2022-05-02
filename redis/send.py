@@ -5,9 +5,12 @@ from time import sleep
 
 from random import randint
 
-# connect with redis server as Alice
-r = redis.Redis(host='localhost', port=6379, db=0)
+# connect with redis server
 
+r = redis.Redis(host='10.255.237.221', port=6379, password='1357642rVi0', db=0)
+
+
+print(r)
 # Loop is the variable needed to save
 loop = 0
 

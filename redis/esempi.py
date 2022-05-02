@@ -9,10 +9,10 @@ r = redis.StrictRedis(host='localhost', port=6379, db=0)
 r.keys()
 
 # r.set('chiave, "valore')
-def setValre():
-    r.set('mario', 'laSuaChiave')
-    value = r.get('mario') 
-    print(value)
+
+r.set('mario', 'laSuaChiave')
+value = r.get('mario') 
+print(value)
 
 # valore incrementale
 
@@ -69,7 +69,6 @@ migliore = str(classifica[len(classifica)-1][0])
 peggiore = str(classifica[0][0])
 
 print(migliore[2:10])
-
 
 print("\nIl punteggio più alto è di: ",migliore[2:10] ," con ",classifica[len(classifica)-1][1], " punti" ) 
 print("\nIl punteggio più basso è di: ", peggiore[2:10]," con ",classifica[0][1], " punti" ) 

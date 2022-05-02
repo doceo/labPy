@@ -10,7 +10,7 @@ r.keys()
 
 # r.set('chiave, "valore')
 
-r.set('mario', 'laSuaChiave')
+r.set('mario', 'ilSuoValore')
 value = r.get('mario') 
 print(value)
 

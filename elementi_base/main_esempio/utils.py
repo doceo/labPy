@@ -10,6 +10,21 @@ def inizializza():
     pass
 
 
+def creaBersagli():
+    pass
+
+def lanciaFreccia():
+    pass
+
+def colpisciBersaglio():
+    pass
+
+def aggiornaPunteggio():
+    pass
+
+def aggiornaLivello():
+    pass
+
 if __name__ == '__main__': 
     pass
 

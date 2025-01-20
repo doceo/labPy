@@ -9,3 +9,5 @@ if sosta < 2:
 	print(azioneuno)
 else:
 	print("paga",costoextrauno)
+
+a = 

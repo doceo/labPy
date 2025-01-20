@@ -7,7 +7,7 @@ for i in range(36):
  for j in range(6):
         tarty.forward(100)
         tarty.left(60)
-    tarty.right(10)
+        tarty.right(10)
 
 
 

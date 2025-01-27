@@ -13,9 +13,3 @@ with open(namePath, 'r') as file:
 
 print("")
 print("")
-
-# apertura del file riga per riga organizzando l'output come dictionary
-with open(namePath, 'r') as file:
-    csv_file = csv.DictReader(file)
-    for row in csv_file:
-        print(dict(row))

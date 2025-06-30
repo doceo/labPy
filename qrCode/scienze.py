@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 
 # Percorsi
-csv_file = 'link_qrcode.csv'  # cambia con il tuo file
+csv_file = 'link-foglio3.csv'  # cambia con il tuo file
 output_dir = 'qrcodes'
 
 # Crea la cartella se non esiste
@@ -15,7 +15,7 @@ df = pd.read_csv(csv_file)
 
 # Font per l'etichetta (puoi cambiare con un percorso a un .ttf se vuoi un font specifico)
 try:
-    font = ImageFont.truetype("arial.ttf", 20)
+    font = ImageFont.truetype("arial.ttf", 53)
 except:
     font = ImageFont.load_default()
 
@@ -32,7 +32,7 @@ for index, row in df.iterrows():
 
     # Aggiungi l'etichetta sotto
     width, height = img_qr.size
-    label_height = 40
+    label_height = 70
     img_final = Image.new("RGB", (width, height + label_height), "white")
     img_final.paste(img_qr, (0, 0))
 
@@ -41,7 +41,7 @@ for index, row in df.iterrows():
     bbox = draw.textbbox((0, 0), label, font=font)
     text_width = bbox[2] - bbox[0]
 
-    text_position = ((width - text_width) // 2, height + 10)
+    text_position = ((width - text_width) // 2, height )# + 10
     draw.text(text_position, label, fill="black", font=font)
 
     # Salva il file

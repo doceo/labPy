@@ -11,11 +11,10 @@ def grafico(dati,etichetta):
     fig, ax = plt.subplots(1, 1)
 
     ax.plot(dati,color="blue", label="paragrafo")
-#ax[1].plot(tempo,asseY,color="red", label="y2")
-#ax[2].plot(tempo,asseZ,color="green", label="y3")
 
-    plt.show()
-
+    jls_extract_var = "_grafico.png"
+    nome_img = etichetta + jls_extract_var
+    plt.savefig(nome_img)
 
 def analizza_testo(nome_file):
     """
@@ -96,8 +95,8 @@ def analizza_testo(nome_file):
                     
                     # Stampiamo un feedback anche sul terminale
                     print(f"- Paragrafo {numero_paragrafo_effettivo}: {numero_parole} parole, {numero_punteggiatura} segni.")
-            grafico(parole, "numero parole")
-            grafico(punt, "numero simboli")
+            grafico(parole, "numero_parole")
+            grafico(punt, "numero_simboli")
 
             print(parole)
             print(punt)

@@ -3,6 +3,21 @@ import sys    # Importiamo 'sys' per uscire in caso di errore
 import csv
 import matplotlib.pyplot as plt
 import numpy as np
+
+def contaLenWord(paragrafo):
+
+    lunghezza = []
+    for c in paragrafo:
+        if len(c)>2:
+            lunghezza.append(len(c))
+    
+    
+    media = sum(lunghezza)/len(lunghezza)
+    print(media)
+    print
+    return media
+
+
 #funzione che genera grafici, non vengono ancora salvati
 def grafico(dati,etichetta):
 
@@ -61,7 +76,7 @@ def analizza_testo(nome_file):
             csv_writer = csv.writer(csv_file, delimiter='-')
             
             # Scriviamo la riga di intestazione (Header)
-            csv_writer.writerow(['Numero Paragrafo', 'Numero Parole', 'Conteggio Punteggiatura'])
+            csv_writer.writerow(['Numero Paragrafo', 'Numero Parole', 'Conteggio Punteggiatura', 'media lunghezza parola'])
             
             print("Paragrafi analizzati:")
             
@@ -91,10 +106,15 @@ def analizza_testo(nome_file):
 
                     punt.append(numero_punteggiatura)
                     # Scriviamo la riga di dati nel file CSV
+                    
+                    caratt_medio = contaLenWord(lista_parole)
+
                     csv_writer.writerow([numero_paragrafo_effettivo, numero_parole, numero_punteggiatura])
                     
                     # Stampiamo un feedback anche sul terminale
-                    print(f"- Paragrafo {numero_paragrafo_effettivo}: {numero_parole} parole, {numero_punteggiatura} segni.")
+                    print(f"- Paragrafo {numero_paragrafo_effettivo}: {numero_parole} parole, {numero_punteggiatura} segni, le parole medie sono lunghe: {caratt_medio}")
+                    
+            
             grafico(parole, "numero_parole")
             grafico(punt, "numero_simboli")
 

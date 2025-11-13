@@ -64,7 +64,7 @@ def analizza_testo(nome_file):
 
     #definisco vettori nei quali salvare le informazioni da rendere a grafico
     parole =[]
-    punt = []
+    punt =[]
 
     # Iniziamo a scrivere il file CSV
     try:
@@ -109,7 +109,7 @@ def analizza_testo(nome_file):
                     
                     caratt_medio = contaLenWord(lista_parole)
 
-                    csv_writer.writerow([numero_paragrafo_effettivo, numero_parole, numero_punteggiatura])
+                    csv_writer.writerow([numero_paragrafo_effettivo, numero_parole, numero_punteggiatura, caratt_medio])
                     
                     # Stampiamo un feedback anche sul terminale
                     print(f"- Paragrafo {numero_paragrafo_effettivo}: {numero_parole} parole, {numero_punteggiatura} segni, le parole medie sono lunghe: {caratt_medio}")

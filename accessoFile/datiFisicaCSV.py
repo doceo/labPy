@@ -20,7 +20,7 @@ with open(namePath, 'r') as file:
        asseX.append(row[1])
        asseY.append(row[2])
        asseZ.append(row[3])
-       print(row)
+       #print(row)
 
 print("vettore tempo ")
 print(tempo)
@@ -33,3 +33,7 @@ print(asseZ)
 
 print("")
 
+
+for i in asseX:
+    if int(i)>2:
+        print

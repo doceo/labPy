@@ -20,6 +20,8 @@ VOCE = "it-IT-DiegoNeural"
 # --- Opzione 3: ALTRA VOCE FEMMINILE (Isabella) ---
 # VOCE = "it-IT-IsabellaNeural"
 
+
+# esistono altri timbri, puoi trovarli digitando nel terminale edge-tts --list-voices
 # ==================================================
 
 async def main():

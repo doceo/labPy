@@ -12,13 +12,13 @@ FILE_OUTPUT = "audiolibro.mp3"
 # SCEGLI LA VOCE (Decommenta quella che vuoi usare)
 
 # --- Opzione 1: VOCE MASCHILE (Diego) ---
-VOCE = "it-IT-DiegoNeural"
+#VOCE = "it-IT-DiegoNeural"
 
 # --- Opzione 2: VOCE FEMMINILE (Elsa) ---
 # VOCE = "it-IT-ElsaNeural"
 
 # --- Opzione 3: ALTRA VOCE FEMMINILE (Isabella) ---
-# VOCE = "it-IT-IsabellaNeural"
+VOCE = "it-IT-IsabellaNeural"
 
 
 # esistono altri timbri, puoi trovarli digitando nel terminale edge-tts --list-voices
